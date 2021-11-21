@@ -21,7 +21,15 @@ import { Button,
          TableColumn,
          Switch,
          Tooltip,
-         Pagination
+         Pagination,
+         Select,
+         Option,
+         Checkbox,
+         CheckboxGroup,
+         Radio,
+         RadioGroup,
+         Dialog,
+         MessageBox
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -47,5 +55,13 @@ Vue.use(TableColumn)
 Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(Dialog)
 // 导入弹框提示组件需要挂载到vue的原型组件上
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
