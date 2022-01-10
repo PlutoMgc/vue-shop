@@ -29,7 +29,8 @@ import { Button,
          Radio,
          RadioGroup,
          Dialog,
-         MessageBox
+         MessageBox,
+         Tag
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -62,6 +63,7 @@ Vue.use(CheckboxGroup)
 Vue.use(Radio)
 Vue.use(RadioGroup)
 Vue.use(Dialog)
+Vue.use(Tag)
 // 导入弹框提示组件需要挂载到vue的原型组件上
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
